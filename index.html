@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Santhipuram Champions League | SCL Season 1</title>
+<meta name="description" content="Official Santhipuram Champions League Season 1 tournament website featuring teams, schedule, rules, player auction, trophies, awards and tournament updates.">
+<meta name="theme-color" content="#050505">
+<meta name="author" content="Superkings Pavilion Bangalore">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Santhipuram Champions League | SCL Season 1">
+<meta property="og:description" content="SCL Season 1 — powered by Superkings Pavilion Bangalore. 10-over matches, 15-member squads, player auction, trophies and ₹1,00,000 cash prizes.">
+<meta property="og:image" content="assets/poster-schedule.jpg">
+<meta property="og:site_name" content="Santhipuram Champions League">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Santhipuram Champions League | SCL Season 1">
+<meta name="twitter:description" content="SCL Season 1 — powered by Superkings Pavilion Bangalore.">
+<meta name="twitter:image" content="assets/poster-schedule.jpg">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/superkings-logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#home">Skip to main content</a>
+
+<!-- ============ ICON SPRITE (inline SVG, works offline) ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 3h12v3a6 6 0 0 1-12 0V3Z"/><path d="M6 5H3v2a4 4 0 0 0 4 4M18 5h3v2a4 4 0 0 1-4 4"/><path d="M12 12v4M9 20h6M10 16h4l1 4H9l1-4Z"/></symbol>
+  <symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 3.6C9.6 6.9 9.6 17 8.5 20.4M11 3.2C12.2 6.8 12.2 17.2 11 20.8"/></symbol>
+  <symbol id="i-bat" viewBox="0 0 24 24"><path d="M14.5 3.5 20 9l-8.5 8.5-5.5-5.5L14.5 3.5Z"/><path d="m6 12-3 3 3 3 3-3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-gavel" viewBox="0 0 24 24"><path d="m4 20h10M14 4l6 6-3 3-6-6 3-3Z"/><path d="m11 7-6 6 3 3 6-6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.5a3 3 0 0 1 0 5.5M17 14.5a6 6 0 0 1 4 5.5"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8 3 4 5.5 6 10l2-1v11h8V9l2 1 2-4.5L16 3l-2 2h-4L8 3Z"/></symbol>
+  <symbol id="i-shoe" viewBox="0 0 24 24"><path d="M2 17h20v3H2z"/><path d="M2 17V9h4l3 3 4-1 3 2h4a4 4 0 0 1 2 4"/></symbol>
+  <symbol id="i-whistle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h13l-3-3M20 16H7l3 3"/></symbol>
+  <symbol id="i-medkit" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M12 11v5M9.5 13.5h5"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.7 6.3.9-4.5 4.4 1 6.2-5.5-2.9-5.5 2.9 1-6.2L3 9.6l6.3-.9L12 3Z"/></symbol>
+  <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-phone-off" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M4 4l16 16"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m3 12 4-4 4 3 3-3 3 3 4-4"/><path d="m7 14 3 3 2-2 3 3 3-3"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
+  <symbol id="i-food" viewBox="0 0 24 24"><path d="M3 13h18a9 9 0 0 1-18 0Z"/><path d="M3 20h18M8 9a4 4 0 0 1 8 0"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><path d="m8 3 2.5 6M16 3l-2.5 6M12 12.5l.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2L9 14.6l2-.3.9-1.8Z"/></symbol>
+  <symbol id="i-certificate" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M7 8h10M7 11h6"/><path d="M15 16v5l2-1.4 2 1.4v-5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-field" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="9" ry="7"/><ellipse cx="12" cy="12" rx="4.5" ry="3.5"/><path d="M12 9v6"/></symbol>
+  <symbol id="i-bowler" viewBox="0 0 24 24"><circle cx="14" cy="4.5" r="2"/><path d="M14 7v5l-4 4-3 4M14 12l4 3M10 11 5 8"/></symbol>
+  <symbol id="i-nodrink" viewBox="0 0 24 24"><path d="M9 3h6v5l-1 4v9h-4v-9L9 8V3Z"/><path d="M4 4l16 16"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4 4 5-7 5 7 4-4-2 11H5L3 8Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+</svg>
+
+<!-- ============ FLOODLIGHT / PARTICLE LAYER ============ -->
+<div class="stage-lights" aria-hidden="true">
+  <span class="beam beam--l"></span>
+  <span class="beam beam--r"></span>
+</div>
+<canvas id="sparks" class="sparks" aria-hidden="true"></canvas>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="shell header-inner">
+    <a class="brand" href="#home" aria-label="Santhipuram Champions League — home">
+      <img src="assets/superkings-logo.png" alt="Superkings Pavilion — Our Sports Destination" width="52" height="52">
+      <span class="brand-text">
+        <strong>SCL</strong>
+        <small>Santhipuram Champions League</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About SCL</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#rulebook">Rulebook</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#auction">Auction</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <span class="season-badge">Season 1</span>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <svg class="ico" aria-hidden="true"><use href="#i-menu"></use></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="shell hero-inner">
+    <img class="hero-crest" src="assets/superkings-logo.png" alt="Superkings Pavilion logo" width="120" height="120">
+    <p class="hero-presents">Superkings Pavilion Bangalore presents</p>
+    <h1 class="hero-title">
+      <span class="hero-line">Santhipuram</span>
+      <span class="hero-line">Champions League</span>
+    </h1>
+
+    <div class="hero-mark">
+      <svg class="hero-crown" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-crown"></use></svg>
+      <span class="scl">SCL</span>
+      <span class="scl-season">Season 1</span>
+    </div>
+
+    <p class="hero-tag">Santhipuram — united by cricket</p>
+
+    <div class="hero-cta">
+      <a class="btn btn--gold" href="#schedule">View tournament</a>
+      <a class="btn btn--ghost" href="#rulebook">View rulebook</a>
+    </div>
+
+    <ul class="hero-strip">
+      <li><span>Season</span><strong>1</strong></li>
+      <li><span>Every match</span><strong>10 overs</strong></li>
+      <li><span>Squad size</span><strong>15 members</strong></li>
+      <li><span>Cash prizes</span><strong>₹1,00,000</strong></li>
+    </ul>
+  </div>
+
+  <a class="scroll-hint" href="#about" aria-label="Scroll to About SCL">
+    <svg class="ico" aria-hidden="true"><use href="#i-chevron"></use></svg>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section section--about" id="about">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">About SCL</p>
+      <h2>More than a tournament<em>A family</em></h2>
+      <p class="lede">
+        The Santhipuram Champions League is the first season of a home-ground cricket league run by
+        Superkings Pavilion Bangalore. Six tournament days, 10-over matches, 15-member squads picked at a
+        live player auction, and a prize table that reaches every team that turns up. Play hard, compete
+        strong, respect everyone, celebrate together.
+      </p>
+    </div>
+
+    <div class="stats" id="stats">
+      <div class="stat reveal">
+        <strong class="count" data-count="10" data-suffix="+">0</strong>
+        <span>Teams</span>
+      </div>
+      <div class="stat reveal">
+        <strong class="count" data-count="150">0</strong>
+        <span>Medals</span>
+      </div>
+      <div class="stat reveal">
+        <strong class="count" data-count="150">0</strong>
+        <span>Certificates</span>
+      </div>
+      <div class="stat reveal">
+        <strong class="count" data-count="100000" data-prefix="₹" data-format="in">0</strong>
+        <span>Cash prizes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HIGHLIGHTS ============ -->
+<section class="section section--tight" id="highlights">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">What you get</p>
+      <h2>Tournament highlights</h2>
+    </div>
+
+    <div class="grid grid--4">
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-ball"></use></svg>
+        <h3>10 over matches</h3><p>One match runs 1 hour 30 minutes.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-users"></use></svg>
+        <h3>15 member squads</h3><p>2 retained players + 13 picked at auction.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-field"></use></svg>
+        <h3>3 over powerplay</h3><p>Only 2 fielders outside the 30 yard circle.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-gavel"></use></svg>
+        <h3>Player auction</h3><p>Squads are built live on stage.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <h3>Trophies &amp; awards</h3><p>Top 6 trophies, series awards, match awards.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-mic"></use></svg>
+        <h3>Commentary facility</h3><p>Live commentary for the teams.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-camera"></use></svg>
+        <h3>HD photo shoot</h3><p>Capturing best moments, for all teams.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-food"></use></svg>
+        <h3>Food for players</h3><p>From league day to final day.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCHEDULE ============ -->
+<section class="section section--schedule" id="schedule">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">Six days of cricket</p>
+      <h2>Tournament dates</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="day reveal"><span class="day-month">October</span><strong class="day-num">2<sup>nd</sup></strong><span class="day-name">Friday</span></li>
+      <li class="day reveal"><span class="day-month">October</span><strong class="day-num">3<sup>rd</sup></strong><span class="day-name">Saturday</span></li>
+      <li class="day reveal"><span class="day-month">October</span><strong class="day-num">4<sup>th</sup></strong><span class="day-name">Sunday</span></li>
+      <li class="day reveal"><span class="day-month">October</span><strong class="day-num">9<sup>th</sup></strong><span class="day-name">Friday</span></li>
+      <li class="day reveal"><span class="day-month">October</span><strong class="day-num">10<sup>th</sup></strong><span class="day-name">Saturday</span></li>
+      <li class="day reveal"><span class="day-month">October</span><strong class="day-num">11<sup>th</sup></strong><span class="day-name">Sunday</span></li>
+    </ol>
+
+    <div class="matchday reveal">
+      <div class="matchday-item">
+        <svg class="ico" aria-hidden="true"><use href="#i-clock"></use></svg>
+        <div><strong>7:00 AM sharp</strong><span>First match starts</span></div>
+      </div>
+      <div class="matchday-item">
+        <svg class="ico" aria-hidden="true"><use href="#i-ball"></use></svg>
+        <div><strong>10 overs match</strong><span>1 match = 1.5 hours</span></div>
+      </div>
+      <div class="matchday-item">
+        <svg class="ico" aria-hidden="true"><use href="#i-pin"></use></svg>
+        <div><strong>Rallabudguru</strong><span>Near by (Link will be Shared via whatsup)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUCTION / TROPHY REVEAL ============ -->
+<section class="section section--auction" id="auction">
+  <div class="auction-curtain" aria-hidden="true"></div>
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">SCL Season 1</p>
+      <h2>Trophy reveal &amp; player auction</h2>
+    </div>
+
+    <div class="auction-grid">
+      <div class="auction-date reveal">
+        <span class="auction-month">September</span>
+        <strong class="auction-num">13<sup>th</sup></strong>
+        <span class="auction-day">Sunday</span>
+        <p class="auction-time">Sharp at 11 AM</p>
+      </div>
+
+      <div class="auction-body reveal">
+        <img class="auction-shot" src="assets/trophies-row.jpg" alt="The SCL Season 1 trophies for 2nd to 6th place on a red carpet" loading="lazy">
+
+        <div class="auction-cards">
+          <article class="auction-card">
+            <svg class="ico" aria-hidden="true"><use href="#i-trophy"></use></svg>
+            <h3>Trophy reveal</h3>
+            <p>The SCL Champions trophy and every placement trophy unveiled on the day.</p>
+          </article>
+          <article class="auction-card">
+            <svg class="ico" aria-hidden="true"><use href="#i-gavel"></use></svg>
+            <h3>Player auction</h3>
+            <p>Each team fills a 15 member squad — 2 retained, 13 picked. The auction starts on time, without further waiting or discussion.</p>
+          </article>
+        </div>
+
+        <ul class="auction-facts">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"></use></svg> Rallabudguru, Govt High Scool</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-food"></use></svg> Lunch will be provided for the auction attendees</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-doc"></use></svg> Entry should be clear 1 day before the auction</li>
+        </ul>
+
+        <a class="btn btn--gold" href="#contact">Auction details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RULEBOOK ============ -->
+<section class="section section--rules" id="rulebook">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">Play fair · Respect all · Enjoy the game</p>
+      <h2>Rulebook</h2>
+      <p class="lede">The 22 official rules for SCL Season 1, exactly as published on the tournament rulebook poster.</p>
+    </div>
+
+    <div class="rules" id="rules">
+      <details class="rule reveal"><summary><span class="rule-no">1</span><svg class="ico" aria-hidden="true"><use href="#i-calendar"></use></svg><span class="rule-text">Everything goes as per the committed schedule.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Everything goes as per the committed schedule.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">2</span><svg class="ico" aria-hidden="true"><use href="#i-ball"></use></svg><span class="rule-text">Each match 10 overs and 1 hour 30 min duration.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Each match 10 overs and 1 hour 30 min duration.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">3</span><svg class="ico" aria-hidden="true"><use href="#i-bowler"></use></svg><span class="rule-text">5 bowlers must each bowler 2 overs.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>5 bowlers must each bowler 2 overs.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">4</span><svg class="ico" aria-hidden="true"><use href="#i-field"></use></svg><span class="rule-text">3 overs powerplay and only 2 fielders must be out from the 30 yard circle.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>3 overs powerplay and only 2 fielders must be out from the 30 yard circle.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">5</span><svg class="ico" aria-hidden="true"><use href="#i-clock"></use></svg><span class="rule-text">If any team delays, overs will be reduced as per the timing and situation.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>If any team delays, overs will be reduced as per the timing and situation.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">6</span><svg class="ico" aria-hidden="true"><use href="#i-gavel"></use></svg><span class="rule-text">Auction will be start on time without further waiting or discussion.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Auction will be start on time without further waiting or discussion.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">7</span><svg class="ico" aria-hidden="true"><use href="#i-users"></use></svg><span class="rule-text">Each team should fill with 15 members squad 2 retain + 13 picked.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Each team should fill with 15 members squad 2 retain + 13 picked.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">8</span><svg class="ico" aria-hidden="true"><use href="#i-ban"></use></svg><span class="rule-text">In fail of 15 members squad team will get disqualify without any further discussion.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>In fail of 15 members squad team will get disqualify without any further discussion.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">9</span><svg class="ico" aria-hidden="true"><use href="#i-doc"></use></svg><span class="rule-text">Entry should be clear before 1 day of auction without miss, in case of fail we will not consider that team as IN.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Entry should be clear before 1 day of auction without miss, in case of fail we will not consider that team as IN.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">10</span><svg class="ico" aria-hidden="true"><use href="#i-shoe"></use></svg><span class="rule-text">Shoes are must for the players in case of fail management will not allow that player to play.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Shoes are must for the players in case of fail management will not allow that player to play.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">11</span><svg class="ico" aria-hidden="true"><use href="#i-shirt"></use></svg><span class="rule-text">All players must wear team jersey to maintain discipline.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>All players must wear team jersey to maintain discipline.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">12</span><svg class="ico" aria-hidden="true"><use href="#i-whistle"></use></svg><span class="rule-text">Umpair decision is final.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Umpair decision is final.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">13</span><svg class="ico" aria-hidden="true"><use href="#i-swap"></use></svg><span class="rule-text">Super sub allowed 1 can bowl 1 can bat.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Super sub allowed 1 can bowl 1 can bat.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">14</span><svg class="ico" aria-hidden="true"><use href="#i-medkit"></use></svg><span class="rule-text">Runner allowed if the batsmen genuinely injured only if the opponent captains allows.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Runner allowed if the batsmen genuinely injured only if the opponent captains allows.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">15</span><svg class="ico" aria-hidden="true"><use href="#i-doc"></use></svg><span class="rule-text">All ICC rules applied.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>All ICC rules applied.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">16</span><svg class="ico" aria-hidden="true"><use href="#i-ban"></use></svg><span class="rule-text">No run for leg bye.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>No run for leg bye.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">17</span><svg class="ico" aria-hidden="true"><use href="#i-ball"></use></svg><span class="rule-text">Only round arm bowling if the bowler is checking based on batsmen appeal umpire will take call if umpire says check then no more discussions.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Only round arm bowling if the bowler is checking based on batsmen appeal umpire will take call if umpire says check then no more discussions.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">18</span><svg class="ico" aria-hidden="true"><use href="#i-ball"></use></svg><span class="rule-text">Team should bring their own sixit ball and they can burn it as usual.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Team should bring their own sixit ball and they can burn it as usual.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">19</span><svg class="ico" aria-hidden="true"><use href="#i-phone-off"></use></svg><span class="rule-text">No mobile phones allowed inside the playing area (except for officials).</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>No mobile phones allowed inside the playing area (except for officials).</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">20</span><svg class="ico" aria-hidden="true"><use href="#i-handshake"></use></svg><span class="rule-text">Maintain discipline, respect opponents, umpires and organizers. Any misconduct will lead to strict action.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Maintain discipline, respect opponents, umpires and organizers. Any misconduct will lead to strict action.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">21</span><svg class="ico" aria-hidden="true"><use href="#i-nodrink"></use></svg><span class="rule-text">If any player is identified as drunk, strictly we will disqualify that player for the entire tournament.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>If any player is identified as drunk, strictly we will disqualify that player for the entire tournament.</p></div></details>
+      <details class="rule reveal"><summary><span class="rule-no">22</span><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg><span class="rule-text">Management decision will be final in any unforeseen situation.</span><svg class="ico caret" aria-hidden="true"><use href="#i-chevron"></use></svg></summary><div class="rule-body"><p>Management decision will be final in any unforeseen situation.</p></div></details>
+    </div>
+
+    <p class="rules-motto reveal">SCL — more than a tournament — a family</p>
+    <ul class="creed reveal">
+      <li><svg class="ico" aria-hidden="true"><use href="#i-trophy"></use></svg> Play hard</li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-users"></use></svg> Compete strong</li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-handshake"></use></svg> Respect everyone</li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg> Celebrate together</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section class="section section--awards" id="awards">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">Season 1 prize table</p>
+      <h2>Trophies, awards &amp; cash prizes</h2>
+    </div>
+
+    <div class="purse reveal">
+      <span>Cash prizes worth</span>
+      <strong>₹1,00,000/-</strong>
+    </div>
+
+    <div class="podium">
+      <article class="prize prize--gold reveal">
+        <span class="prize-rank">Winner</span>
+        <svg class="prize-cup" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <p>Customized trophy + medals</p>
+        <strong>₹35,000/-</strong>
+      </article>
+      <article class="prize prize--silver reveal">
+        <span class="prize-rank">Runners</span>
+        <svg class="prize-cup" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <p>Customized trophy + medals</p>
+        <strong>₹25,000/-</strong>
+      </article>
+    </div>
+
+    <div class="grid grid--4 places">
+      <article class="prize prize--sm reveal">
+        <span class="prize-rank">3<sup>rd</sup> place</span>
+        <svg class="prize-cup" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <p>Premium trophy + cash prize</p><strong>₹15,000/-</strong>
+      </article>
+      <article class="prize prize--sm reveal">
+        <span class="prize-rank">4<sup>th</sup> place</span>
+        <svg class="prize-cup" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <p>Premium trophy + cash prize</p><strong>₹11,000/-</strong>
+      </article>
+      <article class="prize prize--sm reveal">
+        <span class="prize-rank">5<sup>th</sup> place</span>
+        <svg class="prize-cup" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <p>Premium trophy + cash prize</p><strong>₹8,000/-</strong>
+      </article>
+      <article class="prize prize--sm reveal">
+        <span class="prize-rank">6<sup>th</sup> place</span>
+        <svg class="prize-cup" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <p>Premium trophy + cash prize</p><strong>₹6,000/-</strong>
+      </article>
+    </div>
+
+    <div class="grid grid--3 extras">
+      <article class="extra extra--green reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <h3>Every match</h3>
+        <p>MOM trophy + ₹500 worth voucher</p>
+      </article>
+      <article class="extra extra--violet reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg>
+        <h3>Fair play team of the tournament</h3>
+        <p>Customized trophy</p>
+      </article>
+      <article class="extra extra--blue reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-mic"></use></svg>
+        <h3>Commentary facility</h3>
+        <p>For the teams</p>
+      </article>
+      <article class="extra reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-camera"></use></svg>
+        <h3>HD photos shoot facility</h3>
+        <p>For all teams — capturing best moments</p>
+      </article>
+      <article class="extra extra--red reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-food"></use></svg>
+        <h3>Food for all the players</h3>
+        <p>From league day to final day</p>
+      </article>
+      <article class="extra extra--jersey reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-shirt"></use></svg>
+        <h3>Team jersey from the management</h3>
+        <p>For all the 15 members squad — just ₹1999/- once team confirms</p>
+      </article>
+    </div>
+
+    <h3 class="sub-head reveal">Series awards</h3>
+    <div class="grid grid--4 series">
+      <article class="series-award reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-bat"></use></svg>
+        <h4>Best batsmen of the series</h4><p>Superking single blade bat</p>
+      </article>
+      <article class="series-award reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-bat"></use></svg>
+        <h4>Best bowler of the series</h4><p>Superking single blade bat</p>
+      </article>
+      <article class="series-award reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-bat"></use></svg>
+        <h4>Man of the series</h4><p>Superking double blade bat</p>
+      </article>
+      <article class="series-award reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-shoe"></use></svg>
+        <h4>Best fielder of the tournament</h4><p>Premium shoes</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTICIPATION REWARDS ============ -->
+<section class="section section--rewards" id="rewards">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">Nobody goes home empty handed</p>
+      <h2>Participation rewards</h2>
+    </div>
+
+    <div class="ribbons reveal">
+      <p class="ribbon">10 team mementos</p>
+      <p class="ribbon ribbon--mid">· 150 medals ·</p>
+      <p class="ribbon">150 certificates</p>
+    </div>
+
+    <p class="rewards-note reveal">
+      After top 6: remaining 10 teams will get participation memento and medal + certificate
+      for all the 15 members squad.
+    </p>
+
+    <div class="grid grid--3 reward-cards">
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-trophy"></use></svg>
+        <h3>Participation memento</h3><p>One per team, for all 10 remaining teams.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-medal"></use></svg>
+        <h3>Medal</h3><p>150 medals — one for every player in the squad.</p>
+      </article>
+      <article class="feature reveal">
+        <svg class="ico" aria-hidden="true"><use href="#i-certificate"></use></svg>
+        <h3>Certificate</h3><p>150 certificates, printed with team and member name.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAMS ============ -->
+<section class="section section--teams" id="teams">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">Squads are built at the auction</p>
+      <h2>Teams</h2>
+      <p class="lede">Team names, logos and squads are confirmed at the player auction on September 13<sup>th</sup>. This section updates as each franchise is locked in.</p>
+    </div>
+
+    <!-- Cards are rendered from the TEAMS array in script.js — edit that array to add real teams. -->
+    <div class="grid grid--4 team-grid" id="teamGrid"></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section section--gallery" id="gallery">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <p class="kicker">Official artwork</p>
+      <h2>Gallery</h2>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Gallery filters">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter" data-filter="posters" role="tab" aria-selected="false">Posters</button>
+      <button class="filter" data-filter="trophies" role="tab" aria-selected="false">Trophies</button>
+      <button class="filter" data-filter="teams" role="tab" aria-selected="false">Teams</button>
+      <button class="filter" data-filter="matches" role="tab" aria-selected="false">Matches</button>
+      <button class="filter" data-filter="moments" role="tab" aria-selected="false">Moments</button>
+    </div>
+
+    <div class="masonry" id="masonry">
+      <figure class="shot reveal" data-cat="posters">
+        <button class="shot-btn" data-full="assets/poster-schedule.jpg" data-caption="SCL Season 1 — tournament dates">
+          <img src="assets/poster-schedule.jpg" alt="SCL Season 1 tournament dates poster listing October 2, 3, 4, 9, 10 and 11" loading="lazy" width="1024" height="1536">
+        </button>
+        <figcaption>Tournament dates</figcaption>
+      </figure>
+      <figure class="shot reveal" data-cat="posters trophies">
+        <button class="shot-btn" data-full="assets/poster-awards.jpg" data-caption="Trophies, awards and cash prizes">
+          <img src="assets/poster-awards.jpg" alt="SCL Season 1 poster showing trophies, awards and cash prizes worth one lakh rupees" loading="lazy" width="1024" height="1536">
+        </button>
+        <figcaption>Trophies, awards &amp; cash prizes</figcaption>
+      </figure>
+      <figure class="shot reveal" data-cat="posters matches">
+        <button class="shot-btn" data-full="assets/poster-rulebook.jpg" data-caption="The official SCL rulebook">
+          <img src="assets/poster-rulebook.jpg" alt="SCL Season 1 rulebook poster listing all 22 tournament rules" loading="lazy" width="1024" height="1536">
+        </button>
+        <figcaption>Official rulebook</figcaption>
+      </figure>
+      <figure class="shot reveal" data-cat="posters trophies moments">
+        <button class="shot-btn" data-full="assets/poster-trophy-reveal.jpg" data-caption="Trophy reveal and player auction — September 13th">
+          <img src="assets/poster-trophy-reveal.jpg" alt="Trophy reveal and player auction poster for September 13th at Rallabudguru Govt High School" loading="lazy" width="1024" height="1536">
+        </button>
+        <figcaption>Trophy reveal &amp; player auction</figcaption>
+      </figure>
+      <figure class="shot reveal" data-cat="posters teams">
+        <button class="shot-btn" data-full="assets/poster-rewards.jpg" data-caption="Team mementos, medals and certificates">
+          <img src="assets/poster-rewards.jpg" alt="Poster showing 10 team mementos, 150 medals and 150 certificates" loading="lazy" width="848" height="1264">
+        </button>
+        <figcaption>Mementos, medals &amp; certificates</figcaption>
+      </figure>
+    </div>
+
+    <p class="gallery-empty" id="galleryEmpty" hidden>Match and moment photos go up here once Season 1 starts.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="shell footer-inner">
+    <div class="footer-brand">
+      <img src="assets/superkings-logo.png" alt="Superkings Pavilion logo" width="88" height="88" loading="lazy">
+      <div>
+        <strong>Superkings Pavilion</strong>
+        <span>Our sports destination</span>
+      </div>
+    </div>
+
+    <ul class="footer-contact">
+      <li><svg class="ico" aria-hidden="true"><use href="#i-phone"></use></svg><a href="tel:+918971259143">+91 89712 59143</a></li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-globe"></use></svg><a href="https://www.superkingspavilion.com" target="_blank" rel="noopener">www.superkingspavilion.com</a></li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-mail"></use></svg><a href="mailto:superkingspavilionbangalore@gmail.com">superkingspavilionbangalore@gmail.com</a></li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-instagram"></use></svg><a href="https://www.instagram.com/superkingspavilion_bangalore" target="_blank" rel="noopener">superkingspavilion_bangalore</a></li>
+    </ul>
+
+    <div class="footer-league">
+      <strong>Santhipuram Champions League</strong>
+      <span>Season 1</span>
+      <p>More than a tournament — a family</p>
+    </div>
+  </div>
+
+  <p class="copyright">© <span id="year">2026</span> Superkings Pavilion Bangalore. Santhipuram Champions League, Season 1.</p>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Poster preview" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">
+    <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
+  </button>
+  <figure>
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCap"></figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
